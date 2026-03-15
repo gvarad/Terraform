@@ -1,0 +1,59 @@
+2026-03-09T12:15:45.819Z [INFO]  Terraform version: 1.14.6
+2026-03-09T12:15:45.820Z [DEBUG] using github.com/hashicorp/go-tfe v1.94.0
+2026-03-09T12:15:45.821Z [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-03-09T12:15:45.822Z [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2026-03-09T12:15:45.822Z [DEBUG] using github.com/zclconf/go-cty v1.16.3
+2026-03-09T12:15:45.823Z [INFO]  Go runtime version: go1.25.6
+2026-03-09T12:15:45.824Z [INFO]  CLI args: []string{"terraform", "init"}
+2026-03-09T12:15:45.824Z [TRACE] Stdout is not a terminal
+2026-03-09T12:15:45.825Z [TRACE] Stderr is not a terminal
+2026-03-09T12:15:45.826Z [TRACE] Stdin is a terminal
+2026-03-09T12:15:45.827Z [DEBUG] Attempting to open CLI config file: /home/root2/.terraformrc
+2026-03-09T12:15:45.827Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2026-03-09T12:15:45.828Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2026-03-09T12:15:45.829Z [DEBUG] ignoring non-existing provider search directory /home/root2/.terraform.d/plugins
+2026-03-09T12:15:45.829Z [DEBUG] ignoring non-existing provider search directory /home/root2/.local/share/terraform/plugins
+2026-03-09T12:15:45.830Z [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2026-03-09T12:15:45.830Z [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2026-03-09T12:15:45.830Z [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2026-03-09T12:15:45.831Z [INFO]  CLI command args: []string{"init"}
+[0m[1mInitializing the backend...[0m
+2026-03-09T12:15:45.848Z [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2026-03-09T12:15:45.848Z [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2026-03-09T12:15:45.849Z [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2026-03-09T12:15:45.849Z [TRACE] Meta.Backend: instantiated backend of type <nil>
+2026-03-09T12:15:45.852Z [DEBUG] checking for provisioner in "."
+2026-03-09T12:15:45.855Z [DEBUG] checking for provisioner in "/usr/bin"
+2026-03-09T12:15:45.856Z [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2026-03-09T12:15:45.857Z [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2026-03-09T12:15:45.857Z [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2026-03-09T12:15:45.858Z [TRACE] statemgr.Filesystem: read snapshot with lineage "7068dd9d-7968-2583-b34d-9b649af2672a" serial 1
+[0m[1mInitializing provider plugins...[0m
+- Finding latest version of hashicorp/aws...
+2026-03-09T12:15:45.864Z [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2026-03-09T12:15:45.864Z [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
+2026-03-09T12:15:38.656Z [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2026-03-09T12:15:38.657Z [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2026-03-09T12:15:39.319Z [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2026-03-09T12:15:39.370Z [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v6.35.1 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/aws/6.35.1/linux_amd64
+2026-03-09T12:15:39.382Z [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/aws/6.35.1/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/aws 6.35.1
+2026-03-09T12:15:39.382Z [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/6.35.1/download/linux/amd64
+2026-03-09T12:15:39.382Z [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/6.35.1/download/linux/amd64
+2026-03-09T12:15:39.678Z [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/6.35.1/terraform-provider-aws_6.35.1_SHA256SUMS
+2026-03-09T12:15:39.679Z [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/6.35.1/terraform-provider-aws_6.35.1_SHA256SUMS
+2026-03-09T12:15:39.837Z [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/6.35.1/terraform-provider-aws_6.35.1_SHA256SUMS.72D7468F.sig
+2026-03-09T12:15:39.838Z [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/6.35.1/terraform-provider-aws_6.35.1_SHA256SUMS.72D7468F.sig
+- Installing hashicorp/aws v6.35.1...
+2026-03-09T12:15:39.880Z [TRACE] providercache.Dir.InstallPackage: installing registry.terraform.io/hashicorp/aws v6.35.1 from https://releases.hashicorp.com/terraform-provider-aws/6.35.1/terraform-provider-aws_6.35.1_linux_amd64.zip
+2026-03-09T12:15:39.881Z [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/6.35.1/terraform-provider-aws_6.35.1_linux_amd64.zip
+2026-03-09T12:15:47.701Z [DEBUG] Provider signed by 34365D9472D7468F HashiCorp Security (hashicorp.com/security) <security@hashicorp.com>
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mFailed to install provider[0m
+[31m│[0m [0m
+[31m│[0m [0m[0mError while installing hashicorp/aws v6.35.1: write
+[31m│[0m [0m.terraform/providers/registry.terraform.io/hashicorp/aws/6.35.1/linux_amd64/terraform-provider-aws_v6.35.1_x5:
+[31m│[0m [0minput/output error
+[31m╵[0m[0m

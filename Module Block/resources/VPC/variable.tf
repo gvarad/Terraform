@@ -1,0 +1,6 @@
+variable "vpccidr" {
+   
+}
+variable "subnetcidr" {
+    
+}
